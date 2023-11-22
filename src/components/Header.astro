@@ -1,4 +1,5 @@
 ---
+import HeaderButton from "./HeaderButton.astro";
 console.log('sd');
 
 ---
@@ -14,7 +15,19 @@ console.log('sd');
     </div>
 
     <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
-        <a class="text-white" href="/">Últimos lanzamientos</a>
-        <a class="text-white" href="/oldest">Los más viejos</a>
+        <HeaderButton class="text-white" href="/" ruta='/'>
+            <svg slot='before' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+            Últimos lanzamientos
+        </HeaderButton>
+
+        <HeaderButton class="text-white" href="/about" ruta='/about'>
+            <svg slot='before' class="icon icon-tabler icon-tabler-exclamation-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 9v4" /><path d="M12 16v.01" /></svg>
+            Sobre el proyecto
+        </HeaderButton>
+
+        <HeaderButton class="text-white" href="/oldest" ruta='/oldest'>
+            <svg slot='before' class="icon icon-tabler icon-tabler-history-toggle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" /><path d="M14 3.223a9.003 9.003 0 0 1 0 17.554" /><path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" /><path d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" /><path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" /><path d="M12 8v4l3 3" /></svg>
+            Los más viejos
+        </HeaderButton>
     </nav>
 </header>
