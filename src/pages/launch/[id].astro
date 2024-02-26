@@ -3,23 +3,26 @@
 
 import {getLaunchById, getLaunches} from '../../services/spacex-launches.astro'
 import Layout from '../../layouts/Layout.astro'
+import type { Doc } from '../../types/api'
 
 export const prerender = false
 const { id } = Astro.params as any
-let launch
+let launch: Doc
 console.log('id: ', id);
 
-getLaunchById(id).then(launchByid => {
-    launch = launchByid
-    console.log('launch: ',launch);
-})
+// await getLaunchById(id).then(launchByid => {
+//     launch = launchByid
+//     console.log('launch: ',launch);
+// })
 
-
+const promiseLaunch = await getLaunchById(id)
+launch = promiseLaunch
 
 ---
 
 <Layout title='launch'>
     <article>
+       <img src=`${launch.links.patch.small}` alt="">
             {id}
     </article>
 </Layout>
