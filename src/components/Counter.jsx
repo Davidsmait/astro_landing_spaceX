@@ -8,13 +8,18 @@ export function Counter () {
             {/*<button onClick={() => incrementCounter(counter => counter + 1)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">*/}
             {/*    Incrementar <span className="text-xs">{counter}</span>*/}
             {/*</button>*/}
-            <a href="http://main--aesthetic-sorbet-c6fde1.netlify.app/?userKey=2w3w23&token=asdwadwadwa2e3"
+            <a href="nameapp://main--aesthetic-sorbet-c6fde1.netlify.app/?userKey=2w3w23&token=asdwadwadwa2e3"
                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                deeplink parameter
+                deeplink web parameter
             </a>
             <a href="nameapp://"
                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 deeplink nameapp
+            </a>
+
+            <a href="nameapp://?userKey=2w3w23&token=asdwadwadwa2e3"
+               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                deeplink nameapp parameter
             </a>
 
         </>
