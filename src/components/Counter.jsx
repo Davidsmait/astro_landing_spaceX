@@ -12,9 +12,9 @@ export function Counter () {
                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 deeplink parameter
             </a>
-            <a href="https://main--aesthetic-sorbet-c6fde1.netlify.app"
+            <a href="nameapp://"
                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                deeplink no parameter
+                deeplink nameapp
             </a>
 
         </>
